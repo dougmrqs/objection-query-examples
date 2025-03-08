@@ -15,7 +15,7 @@ export default class Animal extends Model {
   // is created it is checked against this schema. http://json-schema.org/.
   static jsonSchema = {
     type: 'object',
-    required: ['name'],
+    required: ['name', 'species'],
 
     properties: {
       id: { type: 'integer' },
